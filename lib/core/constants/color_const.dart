@@ -8,6 +8,9 @@ class ColorConst {
   static Color kPColorPicker2 = const Color(0xff7485B4);
   static Color kPColorPicker3 = const Color(0xff292929);
 
+  static Color kPColorText1 = const Color(0xffCECECE);
+  static Color kPColorText2 = const Color(0xffF9F9F9);
+
   static Color kPColorBar = const Color(0xff8D8D8D);
   static Color kPColorButtonBar = const Color(0xffF9F9F9);
 
