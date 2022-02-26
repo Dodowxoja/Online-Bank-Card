@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home/core/components/categoria_comp.dart';
 import 'package:home/core/constants/color_const.dart';
 import 'package:home/core/constants/edge_insets_const.dart';
 import 'package:home/core/constants/radius_const.dart';
@@ -37,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                             Text(
                               'Good Morning',
                               style: MyTextStyle.textStyle(
-                                colors: ColorConst.kPColorText1,
+                                colors: ColorConst.kPCText1,
                               ),
                             ),
                             Text(
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
               width: double.infinity,
               padding: EdgeInsetsConst.edgeInsetsAll25,
               decoration: BoxDecoration(
-                color: ColorConst.kPColorDarkTheme,
+                color: ColorConst.kPCDarkTheme,
                 borderRadius: BorderRadius.only(
                   topLeft: RadiusConst.radiusConst50,
                   topRight: RadiusConst.radiusConst50,
@@ -91,34 +92,59 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        categoriya('Transfer', Icons.swap_horiz_outlined),
-                        categoriya('Bills', Icons.description_outlined),
-                        categoriya('Recharge', Icons.phone_iphone),
-                        categoriya('More', Icons.more_horiz),
+                        CategoriaComp.categoriya('Transfer',
+                            Icons.swap_horiz_outlined, '/transfer', context),
+                        CategoriaComp.categoriya('Bills',
+                            Icons.description_outlined, '/bills', context),
+                        CategoriaComp.categoriya('Recharge', Icons.phone_iphone,
+                            '/recharge', context),
+                        CategoriaComp.categoriya(
+                            'More', Icons.more_horiz, '/more', context),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 226,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'My Cards',
+                              style: MyTextStyle.textStyle(
+                                size: 20,
+                                colors: ColorConst.kPCText3.withOpacity(
+                                  0.8,
+                                ),
+                              ),
+                            ),
+                            TextButton(
+                              child: Text(
+                                'View All',
+                                style: MyTextStyle.textStyle(
+                                  colors: ColorConst.kPCBar,
+                                  textD: TextDecoration.underline,
+                                ),
+                              ),
+                              onPressed: () {},
+                            )
+                          ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: RadiusConst.borderRadiusConst25,
+                            color: ColorConst.kPCPicker2,
+                          ),
+                          height: 178,
+                        )
                       ],
                     ),
                   )
                 ],
               ),
             ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  InkWell categoriya(String text, IconData icon) {
-    return InkWell(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          CircleAvatar(
-            radius: 38,
-            child: Icon(icon, size: 39),
-          ),
-          Text(
-            text,
-            style: MyTextStyle.textStyle(size: 16),
           ),
         ],
       ),

@@ -1,47 +1,48 @@
 import 'package:flutter/material.dart';
 
 class ColorConst {
-  static Color kPColorLightTheme = const Color(0xffFFFFFF);
-  static Color kPColorDarkTheme = const Color(0xff000000);
+  static Color kPCLightTheme = const Color(0xffFFFFFF);
+  static Color kPCDarkTheme = const Color(0xff000000);
 
-  static Color kPColorPicker1 = const Color(0xff414A61);
-  static Color kPColorPicker2 = const Color(0xff7485B4);
-  static Color kPColorPicker3 = const Color(0xff292929);
+  static Color kPCPicker1 = const Color(0xff414A61);
+  static Color kPCPicker2 = const Color(0xff292929);
+  static Color kPCPicker3 = const Color(0xff7485B4);
 
-  static Color kPColorText1 = const Color(0xffCECECE);
-  static Color kPColorText2 = const Color(0xffF9F9F9);
+  static Color kPCText1 = const Color(0xffCECECE);
+  static Color kPCText2 = const Color(0xffF9F9F9);
+  static Color kPCText3 = const Color(0xffEEEEEE);
 
-  static Color kPColorBar = const Color(0xff8D8D8D);
-  static Color kPColorButtonBar = const Color(0xffF9F9F9);
+  static Color kPCBar = const Color(0xff8D8D8D);
+  static Color kPCButtonBar = const Color(0xffF9F9F9);
 
-  static Color kPColorRadius1 = const Color(0xffDBE3F8);
-  static Color kPColorRadius2 = const Color(0xffFFDEE2);
-  static Color kPColorRadius3 = const Color(0xffFFE8CE);
-  static Color kPColorRadius4 = const Color(0xffEAF5DC);
-  static Color kPColorRadius5 = const Color(0xffD3EAFF);
-  static Color kPColorRadius6 = const Color(0xffE7DFFF);
+  static Color kPCRadius1 = const Color(0xffDBE3F8);
+  static Color kPCRadius2 = const Color(0xffFFDEE2);
+  static Color kPCRadius3 = const Color(0xffFFE8CE);
+  static Color kPCRadius4 = const Color(0xffEAF5DC);
+  static Color kPCRadius5 = const Color(0xffD3EAFF);
+  static Color kPCRadius6 = const Color(0xffE7DFFF);
 
-  static Color kPColorIcon1 = const Color(0xff031952).withOpacity(0.86);
-  static Color kPColorIcon2 = const Color(0xffA32E2E);
-  static Color kPColorIcon3 = const Color(0xff46320E).withOpacity(0.8);
-  static Color kPColorIcon4 = const Color(0xff45661B);
-  static Color kPColorIcon5 = const Color(0xff0C4C87);
-  static Color kPColorIcon6 = const Color(0xff4829A8);
-  static Color kPColorIcon7 = const Color(0xff213569);
+  static Color kPCIcon1 = const Color(0xff031952).withOpacity(0.86);
+  static Color kPCIcon2 = const Color(0xffA32E2E);
+  static Color kPCIcon3 = const Color(0xff46320E).withOpacity(0.8);
+  static Color kPCIcon4 = const Color(0xff45661B);
+  static Color kPCIcon5 = const Color(0xff0C4C87);
+  static Color kPCIcon6 = const Color(0xff4829A8);
+  static Color kPCIcon7 = const Color(0xff213569);
 
-  static Color kPColorElipseRaduis1 = const Color(0xff6A6A6A);
+  static Color kPCElipseRaduis1 = const Color(0xff6A6A6A);
 
-  static Color kPColorElipseIcon1 = const Color(0xffDDDDDD);
+  static Color kPCElipseIcon1 = const Color(0xffDDDDDD);
 
-  static Color kPColorElipse1 = const Color(0xffB1BEEC);
-  static Color kPColorElipse2 = const Color(0xff6C6C6C);
+  static Color kPCElipse1 = const Color(0xffB1BEEC);
+  static Color kPCElipse2 = const Color(0xff6C6C6C);
 
-  static Color kPColorLinear1 = const Color(0xff5A6D9E);
-  static Color kPColorLinear2 = const Color(0xffBECAF5);
+  static Color kPCLinear1 = const Color(0xff5A6D9E);
+  static Color kPCLinear2 = const Color(0xffBECAF5);
 
-  static LinearGradient kPColorLinearGradient1 = LinearGradient(
+  static LinearGradient kPCLinearGradient1 = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [kPColorLinear1, kPColorLinear2],
+    colors: [kPCLinear1, kPCLinear2],
   );
 }

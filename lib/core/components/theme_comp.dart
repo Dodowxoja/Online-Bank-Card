@@ -5,14 +5,14 @@ class ThemeComp {
   static get lightTheme => ThemeData(
         colorScheme: ColorScheme.light(
           brightness: Brightness.light,
-          primary: ColorConst.kPColorLightTheme,
+          primary: ColorConst.kPCLightTheme,
         ),
       );
 
   static get darkTheme => ThemeData(
         colorScheme: ColorScheme.dark(
           brightness: Brightness.dark,
-          primary: ColorConst.kPColorDarkTheme,
+          primary: ColorConst.kPCDarkTheme,
         ),
       );
 }

@@ -33,13 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages![_currentIndex],
-      backgroundColor: ColorConst.kPColorPicker1,
+      backgroundColor: ColorConst.kPCPicker1,
       bottomNavigationBar: BottomNavigationBar(
         iconSize: IconSizeConst.kPBarIcon,
         selectedFontSize: TextSizeConst.kPBarText,
         backgroundColor: Colors.black,
-        fixedColor: ColorConst.kPColorButtonBar,
-        unselectedItemColor: ColorConst.kPColorBar,
+        fixedColor: ColorConst.kPCButtonBar,
+        unselectedItemColor: ColorConst.kPCBar,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
