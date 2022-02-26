@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget {
     return AdaptiveTheme(
       light: ThemeComp.lightTheme,
       dark: ThemeComp.darkTheme,
-      initial: AdaptiveThemeMode.light,
+      initial: AdaptiveThemeMode.dark,
       builder: (lightTheme, darkThema) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Mobile Card',
           theme: lightTheme,
           darkTheme: darkThema,

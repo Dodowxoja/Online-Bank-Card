@@ -10,7 +10,7 @@ class ThemeComp {
       );
 
   static get darkTheme => ThemeData(
-        colorScheme: ColorScheme.light(
+        colorScheme: ColorScheme.dark(
           brightness: Brightness.dark,
           primary: ColorConst.kPColorDarkTheme,
         ),

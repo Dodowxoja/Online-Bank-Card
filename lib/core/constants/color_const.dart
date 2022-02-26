@@ -8,6 +8,9 @@ class ColorConst {
   static Color kPColorPicker2 = const Color(0xff7485B4);
   static Color kPColorPicker3 = const Color(0xff292929);
 
+  static Color kPColorBar = const Color(0xff8D8D8D);
+  static Color kPColorButtonBar = const Color(0xffF9F9F9);
+
   static Color kPColorRadius1 = const Color(0xffDBE3F8);
   static Color kPColorRadius2 = const Color(0xffFFDEE2);
   static Color kPColorRadius3 = const Color(0xffFFE8CE);
@@ -36,9 +39,6 @@ class ColorConst {
   static LinearGradient kPColorLinearGradient1 = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [
-      kPColorLinear1,
-      kPColorLinear2,
-    ],
+    colors: [kPColorLinear1, kPColorLinear2],
   );
 }
