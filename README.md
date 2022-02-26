@@ -1,6 +1,6 @@
 # home
 
-A new Flutter project => Online Bank Card.
+A new Flutter project.
 
 ## Getting Started
 
