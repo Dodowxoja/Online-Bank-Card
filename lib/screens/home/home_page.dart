@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:home/core/components/card_comp.dart';
 import 'package:home/core/components/categoria_comp.dart';
+import 'package:home/core/components/divider_comp.dart';
 import 'package:home/core/constants/color_const.dart';
 import 'package:home/core/constants/edge_insets_const.dart';
 import 'package:home/core/constants/radius_const.dart';
@@ -36,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text(
-                              'Good Morning',
+                              'Good Morning!',
                               style: MyTextStyle.textStyle(
                                 colors: ColorConst.kPCText1,
                               ),
@@ -84,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               child: Column(
-                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
                     height: 110,
@@ -104,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: 226,
+                    height: 224,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -124,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                               child: Text(
                                 'View All',
                                 style: MyTextStyle.textStyle(
-                                  colors: ColorConst.kPCBar,
+                                  colors: ColorConst.kPCText3.withOpacity(0.8),
                                   textD: TextDecoration.underline,
                                 ),
                               ),
@@ -137,8 +139,71 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: RadiusConst.borderRadiusConst25,
                             color: ColorConst.kPCPicker2,
                           ),
-                          height: 178,
-                        )
+                          height: 176,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CardComp.cardCategory1(Icons.shop),
+                              DividerComp.divider(),
+                              CardComp.cardCategory1(Icons.shop),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 224,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Recent Transactions',
+                              style: MyTextStyle.textStyle(
+                                size: 20,
+                                colors: ColorConst.kPCText3.withOpacity(
+                                  0.8,
+                                ),
+                              ),
+                            ),
+                            TextButton(
+                              child: Text(
+                                'View All',
+                                style: MyTextStyle.textStyle(
+                                  colors: ColorConst.kPCText3.withOpacity(0.8),
+                                  textD: TextDecoration.underline,
+                                ),
+                              ),
+                              onPressed: () {},
+                            )
+                          ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: RadiusConst.borderRadiusConst25,
+                            color: ColorConst.kPCPicker2,
+                          ),
+                          height: 175,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CardComp.cardCategory2(
+                                ColorConst.kPCRadius3,
+                                Icons.shop,
+                                ColorConst.kPCIcon2,
+                              ),
+                              DividerComp.divider(),
+                              CardComp.cardCategory2(
+                                ColorConst.kPCRadius4,
+                                Icons.description_outlined,
+                                ColorConst.kPCIcon3,
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   )

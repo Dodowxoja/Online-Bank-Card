@@ -8,6 +8,8 @@ class ColorConst {
   static Color kPCPicker2 = const Color(0xff292929);
   static Color kPCPicker3 = const Color(0xff7485B4);
 
+  static Color kPCPickerDivider = const Color(0xff585858);
+
   static Color kPCText1 = const Color(0xffCECECE);
   static Color kPCText2 = const Color(0xffF9F9F9);
   static Color kPCText3 = const Color(0xffEEEEEE);
@@ -16,11 +18,12 @@ class ColorConst {
   static Color kPCButtonBar = const Color(0xffF9F9F9);
 
   static Color kPCRadius1 = const Color(0xffDBE3F8);
-  static Color kPCRadius2 = const Color(0xffFFDEE2);
-  static Color kPCRadius3 = const Color(0xffFFE8CE);
-  static Color kPCRadius4 = const Color(0xffEAF5DC);
-  static Color kPCRadius5 = const Color(0xffD3EAFF);
-  static Color kPCRadius6 = const Color(0xffE7DFFF);
+  static Color kPCRadius2 = const Color(0xffE9E9E9);
+  static Color kPCRadius3 = const Color(0xffFFDEE2);
+  static Color kPCRadius4 = const Color(0xffFFE8CE);
+  static Color kPCRadius5 = const Color(0xffEAF5DC);
+  static Color kPCRadius6 = const Color(0xffD3EAFF);
+  static Color kPCRadius7 = const Color(0xffE7DFFF);
 
   static Color kPCIcon1 = const Color(0xff031952).withOpacity(0.86);
   static Color kPCIcon2 = const Color(0xffA32E2E);
