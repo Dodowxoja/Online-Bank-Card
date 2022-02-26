@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:home/core/constants/color_const.dart';
 import 'package:home/core/constants/radius_const.dart';
 import 'package:home/widgets/my_text_style.dart';
 
 class CardComp {
-  static Card cardCategory1(IconData icon) {
+  static Card cardCategory1(IconData icon, String svg) {
     return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: RadiusConst.borderRadiusConst25,
-      ),
+      shape:
+          RoundedRectangleBorder(borderRadius: RadiusConst.borderRadiusConst25),
       elevation: 0,
       color: ColorConst.kPCPicker2,
       child: ListTile(
         leading: CircleAvatar(
-          backgroundColor: ColorConst.kPCRadius1,
           radius: 26,
+          backgroundColor: ColorConst.kPCRadius1,
+          child: SvgPicture.asset(
+            svg,
+            colorBlendMode: BlendMode.srcOver,
+            fit: BoxFit.cover,
+          ),
         ),
         title: Text(
           'Name Card',

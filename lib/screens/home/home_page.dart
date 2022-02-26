@@ -5,6 +5,7 @@ import 'package:home/core/components/divider_comp.dart';
 import 'package:home/core/constants/color_const.dart';
 import 'package:home/core/constants/edge_insets_const.dart';
 import 'package:home/core/constants/radius_const.dart';
+import 'package:home/core/constants/svg_imgs.dart';
 import 'package:home/widgets/my_text_style.dart';
 
 class HomePage extends StatefulWidget {
@@ -27,7 +28,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
-                    padding: EdgeInsetsConst.edgeInsetsH25,
+                    padding: EInsetsConst.edgeInsetsH25,
                     height: 62,
                     width: double.infinity,
                     child: Row(
@@ -82,7 +83,7 @@ class _HomePageState extends State<HomePage> {
             flex: 8,
             child: Container(
               width: double.infinity,
-              padding: EdgeInsetsConst.edgeInsetsAll25,
+              padding: EInsetsConst.edgeInsetsAll25,
               decoration: BoxDecoration(
                 color: ColorConst.kPCDarkTheme,
                 borderRadius: BorderRadius.only(
@@ -102,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                         CategoriaComp.categoriya('Transfer',
                             Icons.swap_horiz_outlined, '/transfer', context),
                         CategoriaComp.categoriya('Bills',
-                            Icons.description_outlined, '/bills', context),
+                            Icons.text_snippet_outlined, '/bills', context),
                         CategoriaComp.categoriya('Recharge', Icons.phone_iphone,
                             '/recharge', context),
                         CategoriaComp.categoriya(
@@ -122,9 +123,7 @@ class _HomePageState extends State<HomePage> {
                               'My Cards',
                               style: MyTextStyle.textStyle(
                                 size: 20,
-                                colors: ColorConst.kPCText3.withOpacity(
-                                  0.8,
-                                ),
+                                colors: ColorConst.kPCText3.withOpacity(0.8),
                               ),
                             ),
                             TextButton(
@@ -148,9 +147,10 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              CardComp.cardCategory1(Icons.shop),
+                              CardComp.cardCategory1(Icons.shop, SvgImgs.visa),
                               DividerComp.divider(),
-                              CardComp.cardCategory1(Icons.shop),
+                              CardComp.cardCategory1(
+                                  Icons.shop, SvgImgs.master),
                             ],
                           ),
                         ),
@@ -169,9 +169,7 @@ class _HomePageState extends State<HomePage> {
                               'Recent Transactions',
                               style: MyTextStyle.textStyle(
                                 size: 20,
-                                colors: ColorConst.kPCText3.withOpacity(
-                                  0.8,
-                                ),
+                                colors: ColorConst.kPCText3.withOpacity(0.8),
                               ),
                             ),
                             TextButton(
