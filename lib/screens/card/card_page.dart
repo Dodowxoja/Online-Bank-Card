@@ -10,6 +10,6 @@ class CardPage extends StatefulWidget {
 class _CardPageState extends State<CardPage> {
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return SafeArea(child: Text('Card'));
   }
 }

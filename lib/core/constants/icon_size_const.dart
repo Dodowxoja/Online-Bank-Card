@@ -1,3 +1,3 @@
 class IconSizeConst {
-  static double kPBarIcon = 26.65;
+  static double kPBarIcon = 32;
 }
