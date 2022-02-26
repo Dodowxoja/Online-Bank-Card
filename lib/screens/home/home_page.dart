@@ -21,56 +21,61 @@ class _HomePageState extends State<HomePage> {
         children: [
           Expanded(
             flex: 2,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SizedBox(
-                  height: 62,
-                  width: double.infinity,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        padding: EdgeInsetsConst.edgeInsetsLeft25,
-                        height: 62,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Text(
-                              'Good Morning!',
-                              style: MyTextStyle.textStyle(
-                                colors: ColorConst.kPCText1,
+            child: SizedBox(
+              height: 144,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    padding: EdgeInsetsConst.edgeInsetsH25,
+                    height: 62,
+                    width: double.infinity,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(
+                          height: 62,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                'Good Morning!',
+                                style: MyTextStyle.textStyle(
+                                  colors: ColorConst.kPCText1,
+                                ),
                               ),
-                            ),
-                            Text(
-                              'Name Firstname',
-                              style: MyTextStyle.textStyle(size: 22),
-                            ),
-                          ],
+                              Text(
+                                'Name Firstname',
+                                style: MyTextStyle.textStyle(size: 22),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const CircleAvatar(
-                        radius: 60,
-                        backgroundColor: Colors.white,
-                      ),
-                    ],
+                        const CircleAvatar(
+                          radius: 30,
+                          backgroundColor: Colors.white,
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 60,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Text(
-                        '\$ Price 0,000.00',
-                        style: MyTextStyle.textStyle(size: 26),
-                      ),
-                      Text('Available Balance', style: MyTextStyle.textStyle()),
-                    ],
+                  SizedBox(
+                    height: 66,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text('\$ 8,640.00',
+                            style: MyTextStyle.textStyle(size: 26)),
+                        Text(
+                          'Available Balance',
+                          style: MyTextStyle.textStyle(
+                              colors: ColorConst.kPCText4),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Expanded(

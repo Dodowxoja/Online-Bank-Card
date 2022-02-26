@@ -6,6 +6,11 @@ class MyTextStyle {
     double size = 14,
     TextDecoration textD = TextDecoration.none,
   }) {
-    return TextStyle(color: colors, fontSize: size, decoration: textD);
+    return TextStyle(
+      color: colors,
+      fontSize: size,
+      decoration: textD,
+      fontFamily: 'Poppins-Light',
+    );
   }
 }
