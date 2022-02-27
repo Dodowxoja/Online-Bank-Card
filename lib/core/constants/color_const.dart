@@ -14,6 +14,7 @@ class ColorConst {
   static Color kPCText2 = const Color(0xffF9F9F9);
   static Color kPCText3 = const Color(0xffEEEEEE);
   static Color kPCText4 = const Color(0xffD8D8D8);
+  static Color kPCText5 = const Color(0xff031952);
 
   static Color kPCBar = const Color(0xff8D8D8D);
   static Color kPCButtonBar = const Color(0xffF9F9F9);

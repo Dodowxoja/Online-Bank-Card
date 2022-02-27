@@ -8,8 +8,7 @@ import 'package:home/widgets/my_text_style.dart';
 class CardComp {
   static Card cardCategory1(IconData icon, String svg) {
     return Card(
-      shape:
-          RoundedRectangleBorder(borderRadius: RadiusConst.borderRadiusConst25),
+      shape: RoundedRectangleBorder(borderRadius: RadiusConst.bRadiusConst25),
       elevation: 0,
       color: ColorConst.kPCPicker2,
       child: ListTile(
@@ -53,6 +52,7 @@ class CardComp {
 
   static Card cardCategory2(Color colorR, IconData icon, Color colorI) {
     return Card(
+      shape: RoundedRectangleBorder(borderRadius: RadiusConst.bRadiusConst20),
       elevation: 0,
       color: ColorConst.kPCPicker2,
       child: ListTile(
@@ -70,6 +70,24 @@ class CardComp {
           style: MyTextStyle.textStyle(colors: ColorConst.kPCText3, size: 16),
         ),
       ),
+    );
+  }
+
+  static Card cardCategory3(Color colorR, IconData icon, Color colorI) {
+    return Card(
+      elevation: 0,
+      color: ColorConst.kPCPicker2,
+      child: ListTile(
+          leading: CircleAvatar(
+            backgroundColor: colorR,
+            radius: 26,
+            child: Icon(icon, color: colorI),
+          ),
+          title: Text(
+            'Name data',
+            style: MyTextStyle.textStyle(colors: ColorConst.kPCText3, size: 16),
+          ),
+          trailing: const Icon(Icons.navigate_next)),
     );
   }
 }

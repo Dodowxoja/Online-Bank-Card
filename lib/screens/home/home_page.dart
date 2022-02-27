@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            borderRadius: RadiusConst.borderRadiusConst25,
+                            borderRadius: RadiusConst.bRadiusConst25,
                             color: ColorConst.kPCPicker2,
                           ),
                           height: 176,
@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            borderRadius: RadiusConst.borderRadiusConst25,
+                            borderRadius: RadiusConst.bRadiusConst25,
                             color: ColorConst.kPCPicker2,
                           ),
                           height: 175,

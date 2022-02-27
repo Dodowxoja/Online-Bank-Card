@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Cards',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history),
+            icon: Icon(Icons.text_snippet_outlined),
             label: 'Transactions',
           ),
           BottomNavigationBarItem(
